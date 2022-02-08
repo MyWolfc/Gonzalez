@@ -25,3 +25,9 @@ _Buenos dias, tardes o noches maestro, mi nombre es Juan Eduardo Gonzalez Leyva 
 
 
 
+1. Elemento de lista 1
+2.  Elemento de lista 2
+    - Elemento de lista 3
+    - Elemento de lista 4
+        1. Elemento de lista 5
+        2. Elemento de lista 6
