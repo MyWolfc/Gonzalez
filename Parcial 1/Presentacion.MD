@@ -10,14 +10,14 @@ _Buenos dias, tardes o noches maestro, mi nombre es Juan Eduardo Gonzalez Leyva 
 
 
 1.Fundamentos de telecomunicaciones
-    -Jose Luis Sandoval Guzman
+-Jose Luis Sandoval Guzman
 
 2.Sistemas operativos
     -Jaime David Johnston Barrientos
 
 3.Taller de bases de datos
     -Ludwing Daniel Oliva Perea
-    
+
 4.Arquitectura de computadoras
     -Uriel Vazquez Aranda
 
