@@ -34,7 +34,7 @@ _En relacion a base de datos he manejado con SQLSERVER, el cual se me hizo un po
 
 [Enlace del MySQL workbench](https://dev.mysql.com/downloads/workbench/)
 
-_Ya por ultimo Para finalizar quisiera terminar con una cita con una cita de un programador QDEP con sus cursos de youtube pude moverme en python._
+_Ya por ultimo Para finalizar quisiera terminar con una cita de un programador QDEP con sus cursos de youtube pude moverme en python._
 
 > Si lo puedes imaginar, lo puedes programar. -Alejandro Taboada
 
