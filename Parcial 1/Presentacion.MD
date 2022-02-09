@@ -5,29 +5,19 @@ _Buenos dias, tardes o noches maestro, mi nombre es Juan Eduardo Gonzalez Leyva 
 
 | Materia | Profesor |
 | ----------- | ----------- |
-| Materia | Profesor |
+| Programacion web | Gerardo Pineda Zapata |
 | Fundamentos de telecomunicaciones | Jose Luis Sandoval Guzman |
+| Sistemas Operativos | Jaime David Johnston Barrientos | 
+| Taller de bases de datos | Ludwing Daniel Oliva Perea |
+| Arquitectura d computadoras | Uriel Vazquez Aranda |
 
+_Los Lenguajes que se manejar tampoco que digas que bruto pero si me defiendo bien y he creado aplicaiones durante la carrera son:_
 
-1.Fundamentos de telecomunicaciones
--Jose Luis Sandoval Guzman
+1.C#
 
-2.Sistemas operativos
-    -Jaime David Johnston Barrientos
+2.Python
 
-3.Taller de bases de datos
-    -Ludwing Daniel Oliva Perea
+3.Java
 
-4.Arquitectura de computadoras
-    -Uriel Vazquez Aranda
+4.JavaScript(Muy poco del 1 al 10 un 4)
 
-
-
-
-
-1. Elemento de lista 1
-2.  Elemento de lista 2
-    - Elemento de lista 3
-    - Elemento de lista 4
-        1. Elemento de lista 5
-        2. Elemento de lista 6
