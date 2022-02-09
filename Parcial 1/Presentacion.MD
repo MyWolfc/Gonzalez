@@ -11,7 +11,7 @@ _Buenos dias, tardes o noches maestro, mi nombre es Juan Eduardo Gonzalez Leyva 
 | Taller de bases de datos | Ludwing Daniel Oliva Perea |
 | Arquitectura d computadoras | Uriel Vazquez Aranda |
 
-_Los Lenguajes que se manejar tampoco que digas que bruto pero si me defiendo bien y he creado aplicaiones durante la carrera son:_
+_Los Lenguajes que se manejar tampoco que digas que bruto pero si me defiendo bien :smile: y he creado aplicaiones durante la carrera son:_
 
 1.C#
 
@@ -19,5 +19,5 @@ _Los Lenguajes que se manejar tampoco que digas que bruto pero si me defiendo bi
 
 3.Java
 
-4.JavaScript(Muy poco del 1 al 10 un 4)
+4.JavaScript (Muy poco del 1 al 10 un 4)
 
