@@ -1,0 +1,81 @@
+body   
+{
+    background: #bdc3c7; 
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); 
+
+}
+.tabla
+ {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid black; 
+  }
+  
+  td 
+  {
+    padding: 20px;
+    color: black;
+    border: 1px solid black;
+  }
+  th 
+  {
+    color: black;
+    background-color: dimgray;
+  }
+  tr
+  {
+    color: black;
+    background-color: antiquewhite;
+  }
+  .Zebra1
+  {
+    background-color: darkkhaki;
+  }
+  .Zebra2
+  {
+    background-color: darkgrey;
+  }
+  @media only screen and (max-width: 900px) 
+    {
+		
+		table, thead, tbody, th, td, tr {
+			display: block;
+		}
+
+        tr { border: 1px solid #ccc; }
+
+		
+		thead tr {
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+
+		td {
+			position: relative;      
+			padding-left: 50%;       
+			border: none;
+			border-bottom: 1px solid #eee;
+		}
+
+		td:before {
+			position: absolute;    /* Encabezados */
+			top: 6px;
+			left: 6px;
+			width: 45%;
+			padding-right: 10px;
+		}
+
+
+		
+		td:nth-of-type(1):before { content: "Nivel"; }
+		td:nth-of-type(2):before { content: "Periodo"; }
+		td:nth-of-type(3):before { content: "Institucion Educativa"; }
+		td:nth-of-type(4):before { content: "Documento Obtenido"; }
+		td:nth-of-type(5):before { content: "Comentarios"; }
+	}
+  
+  
+  
