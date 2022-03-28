@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows:  200px 200px 200px;
+
+    justify-content: center;
+    align-content: center;
+   
+
+
+}
+
+.caja{
+    background-color: aqua;
+    text-align: center;
+    border: 1px solid red;
+}
+
+#caja1{
+    grid-column: 1 / span 2;
+}
