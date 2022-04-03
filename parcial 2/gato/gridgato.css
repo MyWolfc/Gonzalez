@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows:  200px 200px 200px;
+
+    justify-content: center;
+    align-content: center;
+   
+
+
+}
+.boton{
+    width: 200;
+    height: 25;
+}
+
+.verdadero{
+    background-color: green;
+}
+.falso{
+    background-color: red;
+}
+.caja{
+    background-color: aqua;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.cajaboton{
+    width: 200px;
+    height: 20px;
+    background-color: aqua;
+}
+
+.cajaamarilla{
+    background-color: black;
+}
