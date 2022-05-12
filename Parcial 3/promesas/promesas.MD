@@ -13,6 +13,8 @@ _Una promesa es un obejto que representa la terminancion o fracaso de un operaci
 
 _En escencia, una promesa es un objeto devuelto al cual se adjuntan funciones de callback, en lugar de pasar las llamadas a un funcion_
 
+_O una definicion mas exacta es que una Promesa es un proxy para un valor no necesariamente conocido en el momento que es creada la promesa. Permite asociar manejadores que actuarán asincrónicamente sobre un eventual valor en caso de éxito, o la razón de falla en caso de una falla. Esto permite que métodos asíncronos devuelvan valores como si fueran síncronos: en vez de inmediatamente retornar el valor final, el método asíncrono devuelve una promesa de suministrar el valor en algún momento en el futuro._
+
 ### Garantias ###
 
 _A difencias de las funciones callback pasadas a un funcion (la manera antigua) una promesa trae consigo unas garantias_
