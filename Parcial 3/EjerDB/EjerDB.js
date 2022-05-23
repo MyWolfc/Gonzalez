@@ -22,11 +22,11 @@ window.onload = function (){
     function AGGJASON(){
         $.post('getregisto.php',{},function(data){
             console.log(data);
-            $('#validacionEncargadoAce').val(data.validacionEncargadoAce);
-            $('#validacionNumTrabaAce').val(data.validacionNumTrabaAce);
-            $('#validacionCostosAce').val(data.validacionCostosAce);
-            $('#validacionPzaEnde').val(data.validacionPzaEnde)
-            $('#validacionDePerdida').val(data.validacionDePerdida);
+            $('#idNombreC').val(data.validacionEncargadoAce);
+            $('#idNombreJ').val(data.validacionNumTrabaAce);
+            $('#idRango').val(data.validacionCostosAce);
+            $('#idEdad').val(data.validacionPzaEnde);
+            $('#idPais').val(data.validacionDePerdida);
             
         },'json');
     }
@@ -45,11 +45,11 @@ window.onload = function (){
    
 
     function refrescar(data){
-          $('#validacionEncargadoAce').val(data.validacionEncargadoAce);
-          $('#validacionNumTrabaAce').val(data.validacionNumTrabaAce);
-          $('#validacionCostosAce').val(data.validacionCostosAce);
-          $('#validacionPzaEnde').val(data.validacionPzaEnde)
-          $('#validacionDePerdida').val(data.validacionDePerdida); 
+        $('#idNombreC').val(data.validacionEncargadoAce);
+        $('#idNombreJ').val(data.validacionNumTrabaAce);
+        $('#idRango').val(data.validacionCostosAce);
+        $('#idEdad').val(data.validacionPzaEnde);
+        $('#idPais').val(data.validacionDePerdida);
     }
 
 }
