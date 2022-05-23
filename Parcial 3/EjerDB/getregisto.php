@@ -10,9 +10,7 @@ $passwword = 'Default123';
 
 try{
     $con = new PDO("mysql:host=$hostname;dbname=$database",$username,$passwword);
-    echo "BANDRA";
 } catch(PDOException $e){
-    echo "ERROR NO SE CONECTO";
     echo $e->getMessage();
     exit();
 }
@@ -20,12 +18,11 @@ try{
 //$con->setAttribute(PDO::ATT_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
 try{
-    echo "HOLAAA";
-    $consultaSql = "Select idID,NombreCom,Pais from Jugadores where idID=" .$id;
+    
+    $consultaSql = "Select idID,NombreCom,NombreDelJuego,Rango,Edad,Pais from Jugadores where idID=" .$id;
     $consulta = $con -> prepare($consultaSql);
     $consulta -> execute();
     $resultado = $consulta->fetch(PDO::FETCH_ASSOC);
-    echo "PASO LA CONSULTA";
     $consulta->closeCursor();
 
 }catch(PDOException $e){
@@ -33,5 +30,7 @@ try{
     echo $e->getMessage();
 
 }
-echo json_encode($resultado);
+
+$resultadoJSON = json_encode($resultado);
+echo $resultadoJSON;
 ?>

@@ -21,12 +21,15 @@ window.onload = function (){
 
     function AGGJASON(){
         $.post('getregisto.php',{},function(data){
+            console.log("CHECKPOINT");
             console.log(data);
-            $('#idNombreC').val(data.validacionEncargadoAce);
-            $('#idNombreJ').val(data.validacionNumTrabaAce);
-            $('#idRango').val(data.validacionCostosAce);
-            $('#idEdad').val(data.validacionPzaEnde);
-            $('#idPais').val(data.validacionDePerdida);
+            console.log("CHECKPOINT");
+            console.log(data.NombreCom);
+            $('#idNombreC').val(data.NombreCom);
+            $('#idNombreJ').val(data.NombreDelJuego);
+            $('#idRango').val(data.Rango);
+            $('#idEdad').val(data.Edad);
+            $('#idPais').val(data.Pais);
             
         },'json');
     }
@@ -45,11 +48,11 @@ window.onload = function (){
    
 
     function refrescar(data){
-        $('#idNombreC').val(data.validacionEncargadoAce);
-        $('#idNombreJ').val(data.validacionNumTrabaAce);
-        $('#idRango').val(data.validacionCostosAce);
-        $('#idEdad').val(data.validacionPzaEnde);
-        $('#idPais').val(data.validacionDePerdida);
+            $('#idNombreC').val(data.NombreCom);
+            $('#idNombreJ').val(data.NombreDelJuego);
+            $('#idRango').val(data.Rango);
+            $('#idEdad').val(data.Edad);
+            $('#idPais').val(data.Pais);
     }
 
 }
