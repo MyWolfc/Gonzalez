@@ -21,7 +21,7 @@ try{
 
 try{
     echo "HOLAAA";
-    $consultaSql = "Select id,NombreCom,Pais from Jugadores where id=" .$id;
+    $consultaSql = "Select idID,NombreCom,Pais from Jugadores where idID=" .$id;
     $consulta = $con -> prepare($consultaSql);
     $consulta -> execute();
     $resultado = $consulta->fetch(PDO::FETCH_ASSOC);
