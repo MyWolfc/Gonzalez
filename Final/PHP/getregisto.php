@@ -1,7 +1,7 @@
 <?php
 
 
-$id=$_POST['par1'];
+$id = $_POST['par1'];
 $hostname = 'localhost';
 $database = 'n19100190';
 $username = 'maneskin';
