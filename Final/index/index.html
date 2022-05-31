@@ -20,22 +20,7 @@
     
      <div class = "container">
        <br />
-       <div class="modal" tabindex="-1">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Busqueda</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <p>ingrese ID.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
+      
         
        <form  method="POST" 
        
@@ -51,15 +36,20 @@
         <div id="DivHeader">   
             <h1  class="display-4">!Bienvenido!</h1>
         </div>
+        <div class="col-sm-1 col-md-1 col-lg-1">
+          <label for="validationCustom03" class="form-label">ID </label>
+          <input type="text" class="form-control" placeholder="id" id="idID" name="Nombre" required disabled>
+        </div>
     </header>
+            
            <div class="col-sm-12 col-md-6">
                <label for="validationCustom03" class="form-label">Nombre Completo </label>
-               <input type="text" class="form-control" id="idNombreC" name="Nombre" required>
+               <input type="text" class="form-control" placeholder="Nombre Completo" id="idNombreC" name="Nombre" required>
              </div>
            
            <div class="col-sm-12 col-md-6">
              <label for="validationCustom02" class="form-label">Numero del juego</label>
-             <input type="text" class="form-control" id="idNombreJ" value="" name="Num Trabajadores" required>
+             <input type="text" class="form-control" id="idNombreJ" placeholder="Nombre del juego" value="" name="Num Trabajadores" required>
              <div class="valid-feedback">
                Bien!
              </div>
@@ -67,21 +57,21 @@
            <br />
            <div class="col-sm-12 col-md-4">
              <label for="validationCustom01" class="form-label">Rango</label>
-             <input type="text" class="form-control" id="idRango" value="" name="Costo De P" required>
+             <input type="text" class="form-control" id="idRango" placeholder="Rango" value="" name="Costo De P" required>
              <div class="valid-feedback">
                Genia!
              </div>
            </div>
            <div class="col-sm-12 col-md-4">
                <label for="validationCustom01" class="form-label">Edad</label>
-               <input type="text" class="form-control" id="idEdad" value="" name="Cant De Pza Ende" required>
+               <input type="text" class="form-control" id="idEdad"  placeholder="Edad" value="" name="Cant De Pza Ende" required>
                <div class="valid-feedback">
                  Genia!
                </div>
              </div>
              <div class="col-sm-12 col-md-4 ">
                <label for="validationCustom01" class="form-label">Pais</label>
-               <input type="text" class="form-control" id="idPais" value="" name="Cant De Perdida" required>
+               <input type="text" class="form-control" id="idPais" placeholder="Pais" value="" name="Cant De Perdida" required>
                <div class="valid-feedback">
                  Genia!
                </div>
@@ -93,16 +83,20 @@
             <button type="button" id="btnInsertar" class="btn btn-primary" formtarget="_blank" value="Presiona">
               INSERTAR SQL
             </button>
-            <button type="button" id="btnActualizar" class="btn btn-primary" formtarget="_blank" value="Presiona">
+            <button type="button" id="btnActualizar" class="btn btn-primary"  value="Presiona">
               ACTUALIZAR SQL
             </button>
-            <button type="button" id="btnConsultaBD" class="btn btn-primary" formtarget="_blank" value="Presiona">
+            <button type="button" id="btnConsulta" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Epico" formtarget="_blank" value="Presiona">
               CONSULTA SQL
             </button>
             <button type="button" id="btnEliminar" class="btn btn-primary" formtarget="_blank" value="Presiona">
               ELIMINAR SQL
             </button>
-           
+           <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+            </button>
+
 
           </div>
           
@@ -134,6 +128,43 @@
 
       
       </script> 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="Epico" class="modal fade" tabindex="-1">
+  <div class="modal-dialog">Busqueda
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Ingrese el Id de la consulta.</p>
+        <input id="id_Consulta" type="text" class="form-control" placeholder="0">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button id="btnConsultaBD" type="button" class="btn btn-primary">Buscar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
