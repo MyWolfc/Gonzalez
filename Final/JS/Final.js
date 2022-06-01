@@ -16,7 +16,7 @@ window.onload = function (){
       let Pais = document.getElementById('idPais').value;
       if( Nombre === "" || NombreJ ==="" || Rango === "" || Edad === "" || Pais === "")
       {
-        alert("Por favor haga una llene todos los datos ");
+        alert("Por favor llene todos los datos correspondientes");
       }
       else
       {
@@ -46,7 +46,7 @@ window.onload = function (){
          refrescar(data);  
         },'json');
         }
-        
+        Limpiar();
     });
     
     $('#btnEliminar').click(function(){
@@ -54,7 +54,7 @@ window.onload = function (){
       console.log(PruebaEPICA);
       if(PruebaEPICA === "")
       {
-        alert("Por favor haga una consulta de la que quiere actualizar");
+        alert("Por favor haga una consulta de la que quiere eliminar");
       }
       else
       {
@@ -83,6 +83,11 @@ window.onload = function (){
        console.log("FINAL DE CONSULTA");
        
     });
+
+    $('#Limpiar').click(function(){
+      Limpiar();
+    });
+
     function refrescar(data){
             $('#idID').val(data.idID);
             $('#idNombreC').val(data.NombreCom);
